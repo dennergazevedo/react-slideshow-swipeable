@@ -27,7 +27,7 @@ const Destaque = (props) => {
       });
 
     function handleNext(){
-        if(sliding !== numItems){
+        if(sliding !== numItems - 1){
             setSliding(sliding + 1);
         }else{
             setSliding(0);
@@ -38,20 +38,12 @@ const Destaque = (props) => {
         if(sliding !== 0){
             setSliding(sliding - 1);
         }else{
-            setSliding(numItems);
+            setSliding(numItems - 1);
         }
     }
     
     return (
         <Carousel {...handlers} style={{cursor:'grab'}}>
-            {React.Children.map(props.children, (child, index) => (
-            <CarouselSlot
-              key={index}
-              order={getOrder({ index: index, pos: state.pos, numItems })}
-            >
-              
-            </CarouselSlot>
-          ))}
             {
                 React.Children.map(props.children, (child) => (
                     <Container sliding={sliding}>
@@ -60,7 +52,7 @@ const Destaque = (props) => {
                 ))
             }
             {
-                numItems >= 1 && 
+                numItems >= 2 && 
                 <>
                     <ButtonNext>
                         <IoIosArrowForward onClick={handleNext} className="icon"/>
