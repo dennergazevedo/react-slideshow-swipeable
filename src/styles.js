@@ -42,7 +42,7 @@ export const ButtonNext = styled.span`
     position: absolute;
     right: 20px;
     font-size: 50px;
-    color: ${props => props.theme.color}5;
+    color: #3335;
     padding: 0;
 
     @media only screen and (max-width: 600px){
@@ -54,7 +54,7 @@ export const ButtonNext = styled.span`
         cursor: pointer;
 
         &:hover{
-            color: ${props => props.theme.color}8;
+            color: #3338;
         }
     }
 `;
@@ -64,7 +64,7 @@ export const ButtonBack = styled.span`
     position: absolute;
     left: 20px;
     font-size: 50px;
-    color: ${props => props.theme.color}5;
+    color: #3335;
     padding: 0;
 
     @media only screen and (max-width: 600px){
@@ -77,6 +77,6 @@ export const ButtonBack = styled.span`
     }
 
     &:hover{
-        color: ${props => props.theme.color}8;
+        color: #3338;
     }
 `;
