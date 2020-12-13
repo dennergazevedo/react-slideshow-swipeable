@@ -1,0 +1,20 @@
+{
+  "name": "inputon-slideshow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Denner Azevedo",
+  "keywords": ["slide", "slideshow", "banner", "arrastar", "slider"],
+  "repository": "https://github.com/dennergazevedo/react-slideshow-swipeable",
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-swipeable": "^6.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "description": "Slideshow swipeable",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
